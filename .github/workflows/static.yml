@@ -32,6 +32,8 @@
             run: npm install
           - name: Build project
             run: npm run build
+          - name: Run tests
+            run: npm test --watchAll=false
           - name: Upload artifact
             uses: actions/upload-pages-artifact@v3
             with:
